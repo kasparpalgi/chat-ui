@@ -1,4 +1,76 @@
-# Chat UI
+# Hiiumaa
+
+## Job
+
+
+git remote set-url origin https://kasparlemmo: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@huggingface.co/spaces/kasparlemmo/hiiumaa
+
+
+## Keith
+
+```env
+### Old ###
+MONGODB_URL=mongodb+srv://siilats:bU3ljGOjUhWiFSmt@cluster0.flfusae.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+HF_TOKEN=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
+
+### Private variables ###
+MONGODB_DB_NAME=sveltycms
+MONGODB_DIRECT_CONNECTION=false
+MONGODB_URL=mongodb+srv://svelcms:KMhzBuqhXpU9q5a@sveltycms.fqufytd.mongodb.net/?retryWrites=true&w=majority&appName=sveltycms
+HF_TOKEN=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
+YDC_API_KEY=f20ed954-c6f5-4f0b-bd00-d523ff17ed4a<__>1ReN26ETU8N2v5f40lYyq4WL
+SERPER_API_KEY=b5046bc1eaa2748f93cf464215b0c728c43e2114
+OPENID_CONFIG={"PROVIDER_URL":"https://huggingface.co","CLIENT_ID":"58e8ef79-e434-4106-af11-76c316bfc904","CLIENT_SECRET":"23171198-9225-43e6-82cc-f5ca76ecfc27"}
+
+### Public variables ###
+LOAD_GGUF_MODELS=false
+MONGO_STORAGE_PATH=
+PUBLIC_ORIGIN=https://kasparlemmo-hiiumaa.hf.space
+REASONING_SUMMARY=true
+LLM_SUMMARIZATION=true
+ENABLE_ASSISTANTS=false
+ENABLE_ASSISTANTS_RAG=false
+REQUIRE_FEATURED_ASSISTANTS=false
+COMMUNITY_TOOLS=false
+ALLOW_IFRAME=true
+ENABLE_DATA_EXPORT=true
+PUBLIC_SMOOTH_UPDATES=false
+PUBLIC_ANNOUNCEMENT_BANNERS=[{"title":"HiiumaaAI","linkTitle":"Uuri rohkem","linkHref":"https://kasparlemmo-hiiumaa.hf.space"}]
+MODELS=[{"name":"utter-project/EuroLLM-9B-Instruct","displayName":"EuroLLM 9B (Eesti keel)","description":"Euroopa jaoks loodud mitmekeelne mudel, mis toetab eesti keelt ja 35 muud keelt. Parim valik Eesti sisu jaoks.","websiteUrl":"https://huggingface.co/utter-project/EuroLLM-9B-Instruct","promptExamples":[{"title":"Tutvusta mulle Hiiumaad","prompt":"Sa oled Hiiumaa kohalik giid ja turismiekspert. Tutvusta mulle Hiiumaa kõige ilusamaid ja huvitavamaid paiku, mida külastada. Räägi iga koha juurde ka mõni põnev ajalugu või legend ning anna soovitusi, millal ja kuidas neid kohti külastada."},{"title":"Hiiumaa söögikohad ja kohalik toit","prompt":"Soovita mulle Hiiumaa parimaid restorane, kohvikuid ja söögikohti. Mis on Hiiumaa kohalikud toiduerikused ja kus neid maitsta? Maini ka hinnaklasse ja atmosfääri."},{"title":"Hiiumaa peidetud aarded","prompt":"Tutvusta mulle Hiiumaa vähem tuntud ja ainulaadseid kohti - need kohad, mida tavalised turistid ei tea, aga mis on kohalike seas populaarsed või kultuuriliselt olulised."}],"parameters":{"temperature":0.7,"top_p":0.9,"max_new_tokens":2048,"repetition_penalty":1.1}},{"name":"Qwen/Qwen2.5-7B-Instruct","displayName":"Qwen 2.5 (Mitmekeelne)","description":"Alibaba poolt loodud võimas mitmekeelne mudel, mis töötab hästi eesti keelega ja on kiire.","promptExamples":[{"title":"Hiiumaa loodus","prompt":"Räägi mulle Hiiumaa looduskaitsealadest, rahvusparkidest, RMK aladest, randadest ja unikaalsetest ökosüsteemidest. Räägi ka Hiiumaa loodsest."},{"title":"Hiiumaa kultuur ja traditsioonid","prompt":"Millised on Hiiumaa kultuuritraditsioonid, rahvakombed ja kohalikud inimesed? Räägi ka kogukondadest, kohalikest üritustest, traditsioonidest ning elust Hiiumaal. Puuduta ka ajalugu."},{"title":"Hiiumaa transport, majutus ja praktiline info","prompt":"Kuidas Hiiumaale jõuda ja saarel liikuda? Anna praktilist infot transpordi, majutuse ja reisiplaneerimise kohta."}],"parameters":{"temperature":0.8,"top_p":0.85,"max_new_tokens":1536,"repetition_penalty":1.05}},{"name":"microsoft/Phi-3.5-mini-instruct","displayName":"Phi-3.5 Mini (Kiire)","description":"Microsofti kompaktne kuid võimas mudel - kiire vastused ja hea kvaliteet väiksemate küsimuste jaoks.","promptExamples":[{"title":"Kiire Hiiumaa info","prompt":"Anna mulle kiire ülevaade Hiiumaast - kus see asub, kui suur on, mis on peamised vaatamisväärsused?"},{"title":"Hiiumaa ilm ja parim aeg","prompt":"Milline on Hiiumaa kliima ja mis on parim aeg saart külastada? Millega arvestada?"},{"title":"Hiiumaa põnevad faktid","prompt":"Räägi mulle mõned huvitavad faktid Hiiumaa kohta. Mõned kohalikud naljad, vanasõnad."}],"parameters":{"temperature":0.6,"top_p":0.9,"max_new_tokens":1024,"repetition_penalty":1.1}}]
+TOOLS=[]
+OLD_MODELS=
+TASK_MODEL="Qwen/Qwen2.5-7B-Instruct"
+PLAYWRIGHT_ADBLOCKER=true
+WEBSEARCH_ALLOWLIST=["hiiumaale.ee","hiiumaa.ee","visitestonia.com","wikipedia.org","et.wikipedia.org","hiiuleht.ee","google.ee","maps.google.com"]
+WEBSEARCH_BLOCKLIST=[]
+ENABLE_LOCAL_FETCH=false
+SKIP_LLAMA_CPP_BUILD=true
+NODE_LLAMA_CPP_SKIP_DOWNLOAD=true
+TEXT_EMBEDDING_MODELS=[{"name":"sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2","displayName":"Multilingual MiniLM","description":"Mitmekeelne embeddings mudel, mis toetab eesti keelt veebiotsingus.","chunkCharLength":384,"endpoints":[{"type":"transformersjs"}]},{"name":"Xenova/gte-small","displayName":"GTE Small","description":"Kompaktne embeddings mudel varuvalikuna.","chunkCharLength":512,"endpoints":[{"type":"transformersjs"}]}]
+USAGE_LIMITS={"conversations":50,"messages":100,"messageLength":4000,"messagesPerMinute":8,"assistants":0,"tools":0}
+PUBLIC_APP_NAME=HiiumaaAI
+PUBLIC_APP_ASSETS=chatui
+PUBLIC_APP_COLOR=blue
+PUBLIC_APP_DESCRIPTION=Hiiumaa Tark AI
+PUBLIC_APP_DATA_SHARING=
+PUBLIC_APP_DISCLAIMER=
+WEBSEARCH_JAVASCRIPT=true
+MESSAGES_BEFORE_LOGIN=6
+ENABLE_CONFIG_MANAGER=true
+```
+
+
+https://huggingface.co/docs/chat-ui/en/installation/spaces
+Running on Huggingface Spaces
+We’re on a journey to advance and democratize artificial intelligence through open source and open science.
+
+https://huggingface.co/docs/hub/spaces-sdks-docker-chatui
+ChatUI on Spaces
+We’re on a journey to advance and democratize artificial intelligence through open source and open science.
+
+NB! The second link wants a100 and that the model will tun locally not using huggingface Cloud model.
+
+## Chat UI
 
 **Find the docs at [hf.co/docs/chat-ui](https://huggingface.co/docs/chat-ui/index).**
 
